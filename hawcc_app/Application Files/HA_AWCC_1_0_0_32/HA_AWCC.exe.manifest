@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HA_AWCC.exe" version="1.0.0.32" publicKeyToken="3c200a126a4ead6b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\HAWCC.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HA_AWCC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="HA_AWCC.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HA_AWCC.exe" size="4845968">
+      <assemblyIdentity name="HA_AWCC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uQRbZ+H2LLcQnuBcG50wYaaB19jWYhMlHmEZm1ku/GU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualBasic.PowerPacks.dll" size="352256">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ge3qaWpdQthkHqvQPFfRHEI2kVtIQVfVJ0MEY0RDClA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HA_AWCC.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDy5/VrQni+RSOb/6uEMWMc6bGQEaa2e2UdeWG+KK1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HAWCC.ico" size="268974">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TqAO88Gjb8DQ3vABh88O4mhsqFL2YZD2RQNIZX1/9dU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ORNL\rhm" issuerKeyHash="d381a4264d24d6032558c5e48e2e8e954ddfc9cd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yqiwshHPVqGkHBCA2renV7HpvYtCc76I7Si9yh0oeqY=</DigestValue></Reference></SignedInfo><SignatureValue>k1s7dTWkiWOMRPAf1Xk6CJHi7YGgFn7eZzqfdGGqlbKLMg6C47dOCC0wlEW4DTl3nuRrwsuWAjATBVMB30ed7zyjzPmVKYlSfm04T3KaAOVfdYjmi5wiybxI0CuGSfpCcwbZaHgOP+2TCBVehmqkEz+phSLyuj1YudT2xQ1h+IQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wvTv/42uUdn7+NwaYssTS5T7QwoqnywGK/bUakJa94QcsqqVqCiRYcDCRiKKThkPM0H3Juo/IaYD5kJdGNDx2eUyNDxtI63xKBc5Ke6Xg63TQsd3ciRJld7blOVm/GUGbqWEn4kVjSIH8iDOOHb0YFCv3FA4jxDqasxGZMOIPqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a67a281dcabd28ed88be73428bbde9b157a7b7da80101ca4a156cf11b2b0a8ca" Description="" Url=""><as:assemblyIdentity name="HA_AWCC.exe" version="1.0.0.32" publicKeyToken="3c200a126a4ead6b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ORNL\rhm</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>du6uCyGVUexzx84dFvgUk9VuW3Q+QqqpbjohAwoklOo=</DigestValue></Reference></SignedInfo><SignatureValue>a7v8brVTq7IfflJZ7LfUCEkv234V/iGHQAtyenTVSpfFDRfEjzzALDlTRFqe56vGkupBfYSHpCmklhbDm7PrMUdqbmkHs35JqCFPHvmofY8qHO9QW/V6vwYVrXn6FjZb8+z8Fi3jZFRgqF60wGDFbntKOjTp2xBl6JJMsto5p8s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wvTv/42uUdn7+NwaYssTS5T7QwoqnywGK/bUakJa94QcsqqVqCiRYcDCRiKKThkPM0H3Juo/IaYD5kJdGNDx2eUyNDxtI63xKBc5Ke6Xg63TQsd3ciRJld7blOVm/GUGbqWEn4kVjSIH8iDOOHb0YFCv3FA4jxDqasxGZMOIPqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQFoeZqWZL9qdOR4RsE5L84zANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAATwBSAE4ATABcAHIAaABtMB4XDTI0MDUyODE0MTI0OVoXDTI1MDUyODIwMTI0OVowGzEZMBcGA1UEAx4QAE8AUgBOAEwAXAByAGgAbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwvTv/42uUdn7+NwaYssTS5T7QwoqnywGK/bUakJa94QcsqqVqCiRYcDCRiKKThkPM0H3Juo/IaYD5kJdGNDx2eUyNDxtI63xKBc5Ke6Xg63TQsd3ciRJld7blOVm/GUGbqWEn4kVjSIH8iDOOHb0YFCv3FA4jxDqasxGZMOIPqkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBOAE1P7HHLBsgjyMfRV8ZwO9Ex7dHiCRYEtrnuf3XHCMAUZWobcMQnYwbZD1pKEIzKdUwHIEQhTLINhuXV4abY/aAFyhPIkJpV4DBIuCKlwAsizxmt7vbhfly5Xhu0aPKbFEfyIUlT7e0l0jwA05XpoznExIrTqDbPlh9FWkZI3w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
